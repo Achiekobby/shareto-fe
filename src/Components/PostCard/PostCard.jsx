@@ -37,11 +37,7 @@ const PostCard = () => {
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 )
-=======
-  )
->>>>>>> e82e44281ebfe76055baefa538b9bec9fbf3bab7
 }
 
 export default PostCard
