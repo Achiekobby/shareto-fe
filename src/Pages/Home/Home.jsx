@@ -1,12 +1,13 @@
 import React from 'react'
 import './Home.css'
 import Profile from './../../Components/Profile/Profile';
+import PostCard from '../../Components/PostCard/PostCard';
 
 const Home = () => {
   return (
     <div className="Home">
 		<Profile/>
-			<div className="post">Post</div>
+		<PostCard/>
 			<div className="info">Right</div>
 		</div>
   )
