@@ -1,0 +1,64 @@
+.followers_section {
+  width: 100%;
+}
+
+.header {
+  font-size: 1.03rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.followers_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+	margin-bottom: 15px;
+}
+
+.followers_info .follower_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.follower_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  border-radius: 50%;
+}
+
+.person_details {
+  display: flex;
+  flex-direction: column;
+	text-align: left;
+	width:130px;
+	margin-top: -10px;
+}
+
+.person_details > h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.person_details>span{
+color: var(--black);
+font-size: 0.85rem;
+font-weight: 500;
+margin-top: -10px;
+}
+
+.follow-btn{
+	margin-right: 10px;
+	background:linear-gradient(106.23deg, #f99827, #f95f35 100%);
+	border: none;
+	padding: 0.65rem 1.2rem;
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.85rem;
+	border-radius: 5px;
+}
