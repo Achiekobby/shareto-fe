@@ -11,7 +11,7 @@ const ProfileCard = () => {
           <img src={profile} alt="profile" />
         </div>
         <div className="profile_details">
-          <h3>Jennifer Acheampong</h3>
+          <h3>Jennifer Smith</h3>
           <p>Midwife | Kumasi, Ghana</p>
         </div>
         <div className="line"></div>
