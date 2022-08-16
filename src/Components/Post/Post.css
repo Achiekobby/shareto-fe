@@ -1,5 +1,11 @@
-.card{
-    width: 90%;
+.post_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 95%;
+}
+.post_container .card{
+    width: 100%;
     padding: 20px;
     margin: 1.2rem 0;
     border-radius: 10px;
@@ -26,6 +32,7 @@
 
 .actions>img{
     margin-right: 20px;
+    cursor: pointer;
 }
 .likes{
     font-size: 0.85rem;
@@ -37,4 +44,8 @@
 font-size: 1.13rem;
 color: var(--black);
 font-weight: normal;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }

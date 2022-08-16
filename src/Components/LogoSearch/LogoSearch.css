@@ -16,7 +16,7 @@
     outline: none;
 }
 .search>input::placeholder{
-    color: #a09d9d;
+    color: var(--hrColor);
     font-weight:500;
 }
 .search_icon{

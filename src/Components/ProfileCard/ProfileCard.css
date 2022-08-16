@@ -1,6 +1,6 @@
 .card{
     width: 100%;
-    background: #fff;
+    background: var(--cardColor);
     border-radius: 5px;
 
 }
@@ -9,7 +9,6 @@
     display: flex;
     padding: 1rem 0;
     flex-direction: column;
-    
 }
 
 .profile_image{
@@ -102,7 +101,7 @@
     margin-top: 20px;
     width: 50%;
     padding: 0.8rem 0.85rem;
-    background: #f95f35;
+    background: var(--buttonBg);
     border: none;
     color: #fff;
     display: flex;
@@ -119,7 +118,7 @@
     background-color: #fff;
     border:1px solid #f95f35;
     transform: scale(1.05);
-    color: #f95f35;
+    color: #fff;
     cursor: pointer;
 
 }

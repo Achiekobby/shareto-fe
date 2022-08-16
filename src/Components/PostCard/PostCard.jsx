@@ -1,10 +1,24 @@
-import React from 'react'
+import React, {useState, useRef} from 'react'
 import "./PostCard.css"
-import {FaImages} from 'react-icons/fa'
+import {FaImages, FaTimes} from 'react-icons/fa'
 import {AiOutlinePlayCircle,AiOutlineSchedule} from 'react-icons/ai'
 import {IoLocationOutline} from 'react-icons/io5'
 import profileImg from '../../img/profileImg.jpg'
+
+
+
 const PostCard = () => {
+    const [image, setImage] = useState({})
+    const imageRef = useRef()
+
+    const onImageChange = (e)=>{
+        if(e.target.files && e.target.files[0]){
+            let img = e.target.files[0]
+            setImage({
+                image:URL.createObjectURL(img)
+            })
+        }
+    }
   return (
     <div className="post_card">
         <div className="post_card_wrapper">
@@ -17,7 +31,7 @@ const PostCard = () => {
                 </form>
             </div>
             <div className="uploads">
-                <div className="icon_action">
+                <div className="icon_action" onClick={()=>imageRef.current.click()}>
                     <FaImages className="icon"/>
                     <span>Photo</span>
                 </div>
@@ -34,8 +48,19 @@ const PostCard = () => {
                     <span>Schedule</span>
                 </div>
                 <button className="share-btn">Share</button>
+                <div style={{display:'none'}}>
+                    <input type="file" name="myImage" ref={imageRef} onChange={onImageChange} />
+                </div>
             </div>
         </div>
+        {
+            image.image && (
+                <div className="previewImage">
+                    <FaTimes onClick={()=>setImage({image:null})}/>
+                    <img src={image.image} alt="" />
+                </div>
+            )
+        }
     </div>
 )
 }
