@@ -1,7 +1,7 @@
 import React from "react";
 import "./Trends.css";
 import trends from "../../Data/TrendsData";
-import ShareModal from './../ShareModal.jsx/ShareModal';
+import ShareModal from '../ShareModal/ShareModal'
 
 const Trends = ({modalOpened, setModalOpened}) => {
   return (
