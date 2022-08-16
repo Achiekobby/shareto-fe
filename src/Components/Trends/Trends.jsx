@@ -1,8 +1,9 @@
 import React from "react";
 import "./Trends.css";
 import trends from "../../Data/TrendsData";
+import ShareModal from './../ShareModal.jsx/ShareModal';
 
-const Trends = () => {
+const Trends = ({modalOpened, setModalOpened}) => {
   return (
     <div className="trend_container">
       <div className="trend_card">
@@ -18,7 +19,9 @@ const Trends = () => {
         })}
       </div>
 
-      <button className="share-btn">Share</button>
+      <button className="share-btn" onClick={()=>setModalOpened(true)}>Share</button>
+      <ShareModal modalOpened={modalOpened} setModalOpened={setModalOpened}/>
+
     </div>
   );
 };

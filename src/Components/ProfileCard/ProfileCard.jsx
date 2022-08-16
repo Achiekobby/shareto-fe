@@ -3,6 +3,7 @@ import profile from "../../img/profileImg.jpg";
 import "./ProfileCard.css";
 
 const ProfileCard = () => {
+  const profilePage = true;
   return (
     <div className="card">
       <div className="profile_card">
@@ -24,12 +25,25 @@ const ProfileCard = () => {
             <h3>5</h3>
             <p>Following</p>
           </div>
+          {profilePage && (
+            <>
+              <div className="line_2"></div>
+              <div className="followers">
+                <h3>3</h3>
+                <p>Post(s)</p>
+              </div>
+            </>
+          )}
         </div>
-				<div className="line_3"></div>
+        <div className="line_3"></div>
 
-				<button className="card-btn" type="submit">
-					My Profile
-				</button>
+        {profilePage ? (
+          ""
+        ) : (
+          <button className="card-btn" type="submit">
+            My Profile
+          </button>
+        )}
       </div>
     </div>
   );

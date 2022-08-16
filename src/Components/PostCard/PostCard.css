@@ -96,7 +96,7 @@ font-weight: 500;
     color: var(--schedule);
 }
 
-.share-btn{
+.uploads .share-btn{
     padding: 0.65rem 1.15rem;
     background: var(--buttonBg);
     color: #fff;
